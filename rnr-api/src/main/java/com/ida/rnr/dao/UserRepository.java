@@ -1,12 +1,12 @@
 package com.ida.rnr.dao;
 
-import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import com.ida.rnr.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Integer>{
 
-	List<User> findByUserId(String userId);
+	Optional<User> findByUserId(String userId);
 	
 }

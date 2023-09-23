@@ -13,13 +13,20 @@ public class User {
 	public User() {
 
 	}
-	public User(String userId, String password, String employeeId, String employeeName, long points) {
+
+	public User(int id, String userId, String password, String employeeId, String employeeName, String employeeEmail,
+			String employeePhone, long allocatedPoints, long earnedPoints, long totalPoints) {
 		super();
+		this.id = id;
 		this.userId = userId;
 		this.password = password;
 		this.employeeId = employeeId;
 		this.employeeName = employeeName;
-		this.points = points;
+		this.employeeEmail = employeeEmail;
+		this.employeePhone = employeePhone;
+		this.allocatedPoints = allocatedPoints;
+		this.earnedPoints = earnedPoints;
+		this.totalPoints = totalPoints;
 	}
 
 	@Id
@@ -33,8 +40,16 @@ public class User {
 	private String employeeId;
 	@Column(name = "emp_name")
 	private String employeeName;
-	@Column(name = "points")
-	private long points;
+	@Column(name = "emp_email")
+	private String employeeEmail;
+	@Column(name = "emp_phone")
+	private String employeePhone;
+	@Column(name = "allocated_Points")
+	private long allocatedPoints;
+	@Column (name = "earnedPoints")
+	private long earnedPoints;
+	@Column(name = "total_points")
+	private long totalPoints;
 	
 	public int getId() {
 		return id;
@@ -66,10 +81,34 @@ public class User {
 	public void setEmployeeName(String employeeName) {
 		this.employeeName = employeeName;
 	}
-	public long getPoints() {
-		return points;
+	public long getTotalPoints() {
+		return totalPoints;
 	}
-	public void setPoints(long points) {
-		this.points = points;
+	public void setTotalPoints(long totalPoints) {
+		this.totalPoints = totalPoints;
+	}
+	public String getEmployeeEmail() {
+		return employeeEmail;
+	}
+	public void setEmployeeEmail(String employeeEmail) {
+		this.employeeEmail = employeeEmail;
+	}
+	public String getEmployeePhone() {
+		return employeePhone;
+	}
+	public void setEmployeePhone(String employeePhone) {
+		this.employeePhone = employeePhone;
+	}
+	public long getAllocatedPoints() {
+		return allocatedPoints;
+	}
+	public void setAllocatedPoints(long allocatedPoints) {
+		this.allocatedPoints = allocatedPoints;
+	}
+	public long getEarnedPoints() {
+		return earnedPoints;
+	}
+	public void setEarnedPoints(long earnedPoints) {
+		this.earnedPoints = earnedPoints;
 	}
 }
