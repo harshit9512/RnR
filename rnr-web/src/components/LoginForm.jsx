@@ -25,7 +25,7 @@ class LoginForm extends Component {
         userServices.getUserById(this.state.userId).then((res) => {
             console.log(res.data.password);
             if (this.state.password === res.data.password) {
-                this.props.navigate("/dashboard")
+                this.props.navigate("/dashboard", { state: res.data })
             }
         });
     }
@@ -63,7 +63,7 @@ class LoginForm extends Component {
             </form>
             <div id="create-account-wrap">
             <p>
-                Not a member? <a href="https://www.googole.com">Create Account</a>
+                Forgot Password? <a href="https://www.googole.com">Reset</a>
             </p>
             </div>
         </div>
