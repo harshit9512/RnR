@@ -41,6 +41,25 @@ export default class SideBar extends Component {
           Customers
         </a>
       </li>
+      <li>
+        <a href="" className="nav-link link-dark">
+          <svg className="bi me-2" width="16" height="16"></svg>
+          
+        </a>
+      </li>
+      <li>
+        <a href="" className="nav-link link-dark">
+          <svg className="bi me-2" width="16" height="16"></svg>
+          
+        </a>
+      </li>
+      <li>
+        <a href="" className="nav-link link-dark">
+          <svg className="bi me-2" width="16" height="16"></svg>
+          
+        </a>
+      </li>
+      
     </ul>
     <hr></hr>
   </div>

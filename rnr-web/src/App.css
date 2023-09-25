@@ -1,8 +1,17 @@
 .sign-in-lb {
   padding: 30px;
 }
+
+.searchBar {
+  flex: inherit !important;
+}
+
 .logo {
   width:265px;
+}
+
+.name-img {
+padding: 10px;
 }
 
 .earned-img {
@@ -32,7 +41,7 @@
 }
 
 .emp-detail {
-  padding: 20px;
+
 }
 
 .greeting {

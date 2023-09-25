@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SideBar from "./SideBar";
 import logo from '../intellect Logo.png';
 import PointsCard from "./PointsCard";
+import "../App.css";
 
 class Dashboard extends Component {
   constructor(props) {
@@ -33,7 +34,7 @@ class Dashboard extends Component {
                 </div>
 
                 <div
-                  className="collapse navbar-collapse"
+                  className="collapse navbar-collapse searchBar"
                   id="navbarSupportedContent"
                 >
                   <form className="d-flex">
@@ -60,10 +61,13 @@ class Dashboard extends Component {
                 <h2>Hello Intellectian!</h2>
               </div>
               <div className="emp-detail">
-              <a href="#" className="d-flex align-items-center link-dark text-decoration-none" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="" width="32" height="32" className="rounded-circle me-2"></img>
-                <strong>{this.state.employeeData.employeeName}</strong>
-              </a>
+                <div className="name-img">
+                  <a href="#" className="d-flex align-items-center link-dark text-decoration-none" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" className="rounded-circle me-2"></img>
+                    <strong>{this.state.employeeData.employeeName}</strong>
+                  </a>
+                </div>
+
                 {/* <p className="font-weight-light fs-6">Employee ID : {this.state.employeeData.employeeId}</p>
                 <p className="font-weight-light">E-mail ID : {this.state.employeeData.employeeEmail}</p>
                 <p className="font-weight-light">Phone No : {this.state.employeeData.employeePhone}</p>
