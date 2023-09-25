@@ -9,7 +9,7 @@ export const routerServices = (Component) => {
     return (
       <Component
         navigate={navigate}
-        params ={params} routeData={state}
+        params ={params} routeData={state === null ? 0 : state}
         {...props} 
         />
     );

@@ -1,0 +1,63 @@
+.sign-in-lb {
+  padding: 30px;
+}
+.logo {
+  width:265px;
+}
+
+.earned-img {
+  width: 70%;
+}
+
+.cards {
+  display: flex;
+}
+
+.logo-img {
+  width: 40%;
+}
+
+.side-main{
+  display: flex;
+}
+
+.dash-main{
+  max-width: 100%;
+  width: 100%;
+  text-align: initial;
+}
+
+.reward {
+  margin-left: 10px;
+}
+
+.emp-detail {
+  padding: 20px;
+}
+
+.greeting {
+  background-color: dodgerblue;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.container {
+    text-align: center;
+  }
+  
+.form_container {
+    width: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+    .form_container {
+      width: 45%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .form_container {
+      width: 65%;
+    }
+}
