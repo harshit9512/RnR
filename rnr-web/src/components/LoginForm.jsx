@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { routerServices } from "../services/RouterServices";
 import userServices from "../services/UserServices";
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '../App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css';
+import logo from '../intellect Logo.png';
 
 class LoginForm extends Component {
   constructor(props) {
@@ -35,52 +36,58 @@ class LoginForm extends Component {
 
   render() {
     return (
-      <div className="login template d-flex justify-content-center align-items-center vh-100 bg-primary">
-        <div className="form_container p-5 rounded bg-white">
-        <form>
-          <h3 className="text-center sign-in-lb">Sign In</h3>
-          <div className="mb-2">
-            <p>
-              <input
-                type="text"
-                id="userId"
-                name="userId"
-                placeholder="userId"
-                className="form-control"
-                onChange={this.userIdHandler}
-                required
-              ></input>
-            </p>
+      <div style={{textAlign: "center"}}>
+        <div className="login template d-flex justify-content-center align-items-center vh-100 bg-primary">
+          <div className="form_container p-5 rounded bg-white">
+            <form>
+              <div>
+                <img src={logo} className="login-logo" alt="intellect-logo" />
+              </div>
+              <h4 className="text-center sign-in-lb">Sign In</h4>
+              <div className="mb-2">
+                <p>
+                  <input
+                    type="text"
+                    id="userId"
+                    name="userId"
+                    placeholder="userId"
+                    className="form-control"
+                    onChange={this.userIdHandler}
+                    required
+                  ></input>
+                </p>
+              </div>
+              <div className="mb-2">
+                <p>
+                  <input
+                    type="text"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    className="form-control"
+                    onChange={this.passwordHandler}
+                    required
+                  ></input>
+                </p>
+              </div>
+              <div className="d-grid">
+                <p>
+                  <button className="btn btn-primary" onClick={this.loginHandler}>
+                    Sign In
+                  </button>
+                </p>
+              </div>
+              <div id="create-account-wrap">
+                <p>
+                  Forgot Password? <a href="https://www.googole.com">Reset</a>
+                </p>
+              </div>
+            </form>
           </div>
-          <div className="mb-2">
-            <p>
-              <input
-                type="text"
-                id="password"
-                name="password"
-                placeholder="Password"
-                className="form-control"
-                onChange={this.passwordHandler}
-                required
-              ></input>
-            </p>
-          </div>
-          <div className="d-grid">
-            <p>
-              <button className="btn btn-primary" onClick={this.loginHandler}>
-                Sign In
-              </button>
-            </p>
-          </div>
-          <div id="create-account-wrap">
-            <p>
-              Forgot Password? <a href="https://www.googole.com">Reset</a>
-            </p>
-          </div>
-        </form>
-        </div>
 
+        </div>
       </div>
+
     );
   }
 }

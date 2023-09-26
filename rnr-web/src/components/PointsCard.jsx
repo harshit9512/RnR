@@ -42,7 +42,7 @@ class PointsCard extends Component {
                 <p className="card-text">
                   Available to {this.state.type === "allocatedPts" ? "Reward" : "Redeem"} : {this.state.points}
                 </p>
-                <button className="btn btn-primary redeem" onClick={this.state.type === "allocatedPts" ? this.rewardBtnHandler : this.redeemBtnHandler}>{this.state.type === "allocatedPts" ? "Reward" : "Redeem"}</button>
+                <button className="btn btn-primary redeem" onClick={this.state.type === "allocatedPts" ? this.rewardBtnHandler : this.redeemBtnHandler}>{this.state.type === "allocatedPts" ? "REWARD ASSOCIATE" : "REDEEM POINTS"}</button>
                 <p className="card-text">
                   <small className="text-body-secondary">
                     Last updated 3 mins ago

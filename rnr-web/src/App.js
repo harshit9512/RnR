@@ -9,7 +9,7 @@ import Reward from "./components/Reward";
 export default class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="app-container">
         <Router>
           <Routes>
             {/* <Route exact path="/" element={<LoginForm/>}></Route> */}

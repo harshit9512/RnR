@@ -11,7 +11,7 @@ class Redeem extends Component {
 
   render() {
     return (
-      <div>
+      <div className='container'>
         <h2>Earned Points : {this.state.points}</h2>
         <p>1 earned point = 1 Rs</p>
         <br />

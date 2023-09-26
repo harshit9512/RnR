@@ -12,13 +12,13 @@ class Reward extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <h2>Allocated Points : {this.state.points}</h2>
         <p>1 earned point = 1 Rs</p>
         <br />
-        <span>Redeem Amount : </span>
+        <span>Reward Associate : </span>
         <input type="text" name="amount" id="redeemAmount" />
-        <button>Redeem</button>
+        <button>Reward</button>
       </div>
     );
   }
